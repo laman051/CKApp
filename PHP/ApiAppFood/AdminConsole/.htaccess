@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule "banner" "?mod=banner"
+RewriteRule "danhmuc" "?mod=danhmuc"
+RewriteRule "nguoidung" "?mod=customer"
+RewriteRule "loaisanpham" "?mod=loaisanpham"
+RewriteRule "hoadon" "?mod=donhang"
+RewriteRule "khuyenmai" "?mod=khuyenmai"
+RewriteRule "sanpham" "?mod=mon"
+RewriteRule "admin" "Admin"
+RewriteRule "blog" "?mod=blogs"
+RewriteRule "about" "?mod=about"
+RewriteRule "qlnhanvien" "?mod=qlnhanvien"

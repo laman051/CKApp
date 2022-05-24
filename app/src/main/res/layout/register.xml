@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/adrr_cus"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_baseline_house_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Address"
+
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/phone_cus"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#383841"
+        android:text="Đăng Ký"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name_cus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="12dp"
+
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+
+        android:textColorHint="@color/white"
+
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/age_cus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/name_cus" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phone_cus"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_phone_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/age_cus"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/gmail_cus_regis"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Gmail"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/adrr_cus"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <com.example.appfood.CustomView_Login.Hidden_pass
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/gmail_cus_regis"
+        app:use_try_eye="true" />
+
+    <com.example.appfood.CustomView_Login.Hidden_pass
+        android:id="@+id/re_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_bg_login"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Re_Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:use_try_eye="true" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center|center_vertical"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textColor="#f48f52"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/re_password" />
+
+    <View
+        android:id="@+id/footer_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textColor="@color/login_form_details"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footer_line" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/facebook_login"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="17dp"-->
+    <!--        android:drawableStart="@drawable/ic_if_square_facebook"-->
+    <!--        android:drawablePadding="8dp"-->
+    <!--        android:text="Sign In With Facebook"-->
+    <!--        android:textColor="@color/login_form_details"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/footer_line"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/guideline_right"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/guideline_left" />-->
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/line1"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/login_form_details_medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/socialicons"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/or"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="spread_inside"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/guideline_left"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btn_register" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/or"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="or"-->
+    <!--        android:textColor="@color/login_form_details"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/line1"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/line2"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/line1"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/line1" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/line2"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/login_form_details_medium"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/or"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/guideline_right"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/or"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/or" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/socialicons"-->
+    <!--        android:layout_width="382dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/footer_line"-->
+
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline_right"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline_left">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_margin="20dp"-->
+    <!--            android:src="@drawable/google" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_margin="20dp"-->
+    <!--            android:src="@drawable/facebook" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_margin="20dp"-->
+    <!--            android:src="@drawable/twitter" />-->
+    <!--    </LinearLayout>-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item android:state_pressed="true">-->
+<!--        <shape>-->
+<!--            <stroke android:color="@color/teal_700" android:width="2dp"/>-->
+<!--            <corners android:radius="2dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
+
+<!--    <item>-->
+<!--        <shape>-->
+<!--            <stroke android:color="@color/login_form_details_light" android:width="2dp"/>-->
+<!--            <corners android:radius="2dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--</selector>-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <gradient android:startColor="#f48f52"  android:endColor="#fbbe3c" android:type="linear"/>-->
+    <corners android:radius="7dp"/>
+    <gradient android:startColor="#ffffff"  android:endColor="#ffffff" android:type="linear"/>
+
+
+
+</shape>
